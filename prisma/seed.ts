@@ -1,4 +1,4 @@
-import { PrismaClient, PostStatus, Role } from '@prisma/client'
+import { PrismaClient } from '@prisma/client'
 
 const prisma = new PrismaClient()
 
@@ -8,7 +8,7 @@ async function main() {
     data: {
       name: 'María González',
       email: 'maria.gonzalez@empresa.com',
-      role: Role.ADMIN,
+      role: 'ADMIN',
     },
   })
 
@@ -16,7 +16,7 @@ async function main() {
     data: {
       name: 'Carlos Rodríguez',
       email: 'carlos.rodriguez@empresa.com',
-      role: Role.AUTHOR,
+      role: 'AUTHOR',
     },
   })
 
@@ -107,7 +107,7 @@ Para implementar exitosamente la IA en tu organización:
 
 La inteligencia artificial no es el futuro distante - es el presente. Las empresas que actúen ahora tendrán una ventaja competitiva significativa en el mercado que está emergiendo.`,
       featuredImage: 'https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-      status: PostStatus.PUBLISHED,
+      status: 'PUBLISHED',
       publishedAt: new Date('2024-01-15'),
       authorId: admin.id,
     },
@@ -180,7 +180,7 @@ Para medir el progreso hacia un crecimiento sostenible, las PYMEs deben monitore
 
 El crecimiento sostenible es un maratón, no una carrera de velocidad. Las empresas que entienden esto construyen organizaciones resilientes capaces de prosperar en cualquier entorno económico.`,
       featuredImage: 'https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-      status: PostStatus.PUBLISHED,
+      status: 'PUBLISHED',
       publishedAt: new Date('2024-01-10'),
       authorId: author.id,
     },
@@ -267,7 +267,7 @@ Los líderes empresariales deben desarrollar nuevas competencias:
 
 La innovación continua no es una opción - es una necesidad estratégica. Las empresas que desarrollen estas capacidades no solo sobrevivirán a los cambios, sino que los liderarán.`,
       featuredImage: 'https://images.pexels.com/photos/3184339/pexels-photo-3184339.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-      status: PostStatus.PUBLISHED,
+      status: 'PUBLISHED',
       publishedAt: new Date('2024-01-05'),
       authorId: admin.id,
     },

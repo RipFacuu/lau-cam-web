@@ -232,6 +232,12 @@ La innovación continua no es una opción - es una necesidad estratégica. Las e
   },
 ]
 
+export async function generateStaticParams() {
+  return mockPosts.map((post) => ({
+    slug: post.slug,
+  }))
+}
+
 export async function generateMetadata({ params }: BlogPostPageProps): Promise<Metadata> {
   const post = mockPosts.find(p => p.slug === params.slug)
   

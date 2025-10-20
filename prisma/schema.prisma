@@ -14,7 +14,7 @@ model User {
   id        String   @id @default(cuid())
   name      String
   email     String   @unique
-  role      Role     @default(AUTHOR)
+  role      String   @default("AUTHOR") // AUTHOR, EDITOR, ADMIN
   posts     Post[]
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
@@ -29,7 +29,7 @@ model Post {
   summary      String
   content      String
   featuredImage String?
-  status       PostStatus @default(DRAFT)
+  status       String     @default("DRAFT") // DRAFT, PUBLISHED
   publishedAt  DateTime?
   author       User       @relation(fields: [authorId], references: [id])
   authorId     String
@@ -77,15 +77,4 @@ model PostTag {
 
   @@id([postId, tagId])
   @@map("post_tags")
-}
-
-enum Role {
-  AUTHOR
-  EDITOR
-  ADMIN
-}
-
-enum PostStatus {
-  DRAFT
-  PUBLISHED
 }

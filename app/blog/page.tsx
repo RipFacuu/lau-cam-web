@@ -5,6 +5,7 @@ import { PostCard } from '@/components/blog/post-card'
 import { HeroSection } from '@/components/blog/hero-section'
 import { SearchFilter } from '@/components/blog/search-filter'
 import { Button } from '@/components/ui/button'
+import { Search } from 'lucide-react'
 
 // Mock data - In a real app, this would come from the database
 const mockPosts = [
@@ -188,7 +189,7 @@ export default function BlogPage() {
                   Artículo <span className="text-lau-cam-yellow">Destacado</span>
                 </h2>
               </div>
-              <PostCard post={featuredPost} featured={true} />
+              <PostCard post={featuredPost} />
             </div>
           </div>
         </section>
