@@ -128,7 +128,7 @@ Ofrecemos fabricación a medida. asegurando calidad, durabilidad y seguridad en 
             <Card className="group overflow-hidden hover:shadow-2xl transition-all duration-500 border-0 bg-white">
               <div className="relative h-80 overflow-hidden">
                 <img 
-                  src="/images/501454038_17880501684308285_9083789255022223789_n.jpg"
+                  src="/images/inicio.png"
                   alt="Complejo Deportivo Elenia - Iluminación LED nocturna"
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                 />

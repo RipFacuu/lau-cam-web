@@ -89,7 +89,7 @@ const projects = [
     category: "Deportivo",
     location: "Córdoba, Argentina",
     date: "2024",
-    image: "/images/501454038_17880501684308285_9083789255022223789_n.jpg",
+    image: "/images/inicio.png",
     description: "Instalación completa de iluminación LED para complejo deportivo Elenia con 3 canchas de fútbol de césped artificial, 6 canchas de pádel, restaurante y amplias zonas de estacionamiento. Sistema de iluminación nocturna que permite actividades deportivas las 24 horas.",
     features: ["3 canchas de fútbol iluminadas", "6 canchas de pádel con iluminación LED", "Restaurante y área de servicios", "Estacionamiento LED completo", "Columnas metálicas especializadas", "Control de iluminación por zonas"],
     icon: Award,
